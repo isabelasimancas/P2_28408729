@@ -1,0 +1,134 @@
+body {
+	margin: 0;
+	padding: 0;
+	background: #DA627D;
+}
+.name {
+	width: 100%;
+	height: 300px;
+	background: #f9dbbd;
+	transform: skewY(-5deg);
+}
+
+.name .content {
+	width: 50%;
+	height: 50%;
+	position: absolute;
+	left: 25%;
+}
+
+.name .content .p-1 {
+	color: #9a348e;
+	font-family: 'Beau Rivage', cursive;
+	font-weight: bolder;
+	font-size: 65px;
+	transform: skewY(5deg);
+	margin-bottom: 0; 
+}
+
+.name .content .p-2 {
+	color: #0D0628;
+	font-family: 'Cormorant Garamond', serif;
+	font-size: 35px;
+	transform: skewY(5deg);
+	margin-top: 0;
+	margin-bottom: 0; 
+
+}
+
+.name .img {
+	position: absolute;
+	top: 18%;
+	right: 5%;
+	width: 180px;
+	height: 180px;
+	border-radius: 100%;
+	transform: skewY(5deg);
+	overflow: hidden;
+}
+
+.name .img img {
+	width: 180px; 
+	height: 180px;
+
+}
+
+.name .redes .r1 {
+	transform: skewY(5deg);
+	display: inline;
+}
+
+.name .redes .r2 {
+	transform: skewY(5deg);
+	display: inline;
+}
+
+.name .redes .r3 {
+	transform: skewY(5deg);
+	display: inline;
+}
+
+.info {
+	width: 90%;
+	height: auto;
+	background: #F9DBBD;
+	margin: 5% auto;
+	padding: 20px;
+	border-radius: 20px;
+}
+
+.info .tituloSeccion {  /*titulo*/ 
+	color: #9a348e;
+	font-family: 'Beau Rivage', cursive;
+	border-bottom: 3px #DA627D dashed;
+	font-weight: bolder;
+	font-size: 250%;
+	text-align: center;
+}
+
+.info .tituloInfo { /*nombre apellido*/
+	color: #9A348E;
+	font-family: 'Cormorant Garamond', serif;
+	font-weight: bolder;
+	font-size: large;
+	display: inline;
+	margin-right: 10px;
+}
+
+.info .infoInfo{  /*info de nombre y apellido*/
+	color: #0D0628;
+	font-family: 'Cormorant Garamond', serif;
+	font-weight: normal;
+	font-size: large;
+	display: inline;
+}
+
+.info .tituloInfo {
+	color: #9A348E;
+	font-family: 'Cormorant Garamond', serif;
+	font-weight: bolder;
+	font-size: large;
+	margin-right: 10px;
+	display: inline;
+}
+
+.info .infoInfo {
+	color: #0D0628;
+	font-family: 'Cormorant Garamond', serif;
+	font-weight: normal;
+	font-size: large;
+	display: inline;
+}
+
+.info span {
+	display: inline-block;
+	width: auto;
+	height: auto;
+	padding-left: 1%; 
+	padding-right: 1%;
+	background: #FCA17D;
+	color: #0D0628;
+	font-family: 'Cormorant Garamond', serif;
+	border-radius: 5px;
+}
+
