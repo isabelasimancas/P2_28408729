@@ -1,13 +1,15 @@
 body {
-	margin: 0;
-	padding: 0;
-	background: #DA627D;
+	background-image: url(../img/minimalist.jpg);
+	background-size: 100vw 100vh;
+	background-attachment: fixed;
+		margin: 0;
 }
 .name {
 	width: 100%;
 	height: 300px;
-	background: #f9dbbd;
+	background: rgba(83,211,235,0.5);
 	transform: skewY(-5deg);
+	border: 3px dashed;
 }
 
 .name .content {
@@ -18,7 +20,7 @@ body {
 }
 
 .name .content .p-1 {
-	color: #9a348e;
+	color: black;
 	font-family: 'Beau Rivage', cursive;
 	font-weight: bolder;
 	font-size: 65px;
@@ -27,7 +29,7 @@ body {
 }
 
 .name .content .p-2 {
-	color: #0D0628;
+	color: #ffff;
 	font-family: 'Cormorant Garamond', serif;
 	font-size: 35px;
 	transform: skewY(5deg);
@@ -45,6 +47,7 @@ body {
 	border-radius: 100%;
 	transform: skewY(5deg);
 	overflow: hidden;
+	border: solid;
 }
 
 .name .img img {
@@ -71,23 +74,24 @@ body {
 .info {
 	width: 90%;
 	height: auto;
-	background: #F9DBBD;
+	background: rgba(183,169,245,0.5);
 	margin: 5% auto;
 	padding: 20px;
 	border-radius: 20px;
+	border: dashed;
 }
 
 .info .tituloSeccion {  /*titulo*/ 
-	color: #9a348e;
-	font-family: 'Beau Rivage', cursive;
-	border-bottom: 3px #DA627D dashed;
+	color: black;
+	font-family: 'Cormorant Garamond', serif;
+	border-bottom: 3px solid;
 	font-weight: bolder;
 	font-size: 250%;
 	text-align: center;
 }
 
 .info .tituloInfo { /*nombre apellido*/
-	color: #9A348E;
+	color: black;
 	font-family: 'Cormorant Garamond', serif;
 	font-weight: bolder;
 	font-size: large;
@@ -96,7 +100,7 @@ body {
 }
 
 .info .infoInfo{  /*info de nombre y apellido*/
-	color: #0D0628;
+	color: #ffff;
 	font-family: 'Cormorant Garamond', serif;
 	font-weight: normal;
 	font-size: large;
@@ -104,7 +108,7 @@ body {
 }
 
 .info .tituloInfo {
-	color: #9A348E;
+	color: black;
 	font-family: 'Cormorant Garamond', serif;
 	font-weight: bolder;
 	font-size: large;
@@ -113,7 +117,7 @@ body {
 }
 
 .info .infoInfo {
-	color: #0D0628;
+	color: #0C0D73;
 	font-family: 'Cormorant Garamond', serif;
 	font-weight: normal;
 	font-size: large;
@@ -126,9 +130,40 @@ body {
 	height: auto;
 	padding-left: 1%; 
 	padding-right: 1%;
-	background: #FCA17D;
-	color: #0D0628;
+	background: #60619E;
+	color: #ffff;
 	font-family: 'Cormorant Garamond', serif;
 	border-radius: 5px;
+}
+header {
+    width:300px;
+	max-width:300px;
+	margin:20px auto;
+}
+header nav{
+    width:300px;
+	width:300px;
+	background: rgba(0,0,0,0.0);
+	overflow:hidden;
+}
+header nav ul{
+	list-style:none;
+}
+header nav ul {
+	float:left;
+}
+header nav ul a{
+	padding: 10px 20px;
+	display:block;
+	color:black;
+	text-decoration:none;
+    font-size: 20px;
+    font-family: 'Amatic SC', cursive;
+    border-radius: 5%;
+    border: black dashed;
+    background: rgba(183,169,245);
+}
+header nav ul li a:hover{
+	background: rgba(83,211,235);
 }
 

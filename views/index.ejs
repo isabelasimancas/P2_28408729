@@ -3,15 +3,16 @@
 <head>
 	<title>Curriculum Vitae</title>
 	<link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="css/contacto.css">
 	<link href="https://fonts.googleapis.com/css2?family=Beau+Rivage&display=swap" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/style.css">	
-
 </head>
+
 <body>
 
 	<div class="name">
 		<div class="img">
-			<img src="img/isa.jpeg">
+			<img src="img/isa.jpg">
 		</div>
 		<div class="content">
 			<p class="p-1">Isabela Simancas</p>
@@ -20,6 +21,14 @@
 			<p class="r1"><a href="https://www.facebook.com/Izzy1411/"><img src="img/facebook.png" width="45" height="40"></a></p>
 			<p class="r2"><a href="https://www.instagram.com/ivdjsg01/"><img src="img/instagram.png" width="49" height="40"></a></p>
 			<p class="r3"><a href="https://twitter.com/Alebasi1D"><img src="img/twitter.png" width="34" height="40"></a></p>
+
+			<header>
+				<nav>
+				 <ul>
+					 <a href="contactos">Contactos</a>
+				 </ul>
+				</nav> 
+			 </header>
 	</div>
 		</div>
 	</div>
@@ -81,6 +90,24 @@
 		<span>•	Conocimiento básico en aplicaciones Microsoft Office y Linux</span>
 		<span>•	Conocimiento básico en la catedra de guitarra</span>
 	</div>
+	<h2>Contacto</h2>
+	<form action="/comentario" method="post">
+		<ul>
+			<li>
+			  <label for="name">Nombre:</label>
+			  <input type="text" id="name" name="user_name">
+			</li>
+			<li>
+			  <label for="mail">Email:</label>
+			  <input type="email" id="mail" name="user_mail">
+			</li>
+			<li>
+			  <label for="msg">Comentario:</label>
+			  <textarea id="msg" name="user_message"></textarea>
+			</li>
+		   </ul>
+		   <button type="submit">Enviar</button>
+	</form>
 
 </body>
 </html>
