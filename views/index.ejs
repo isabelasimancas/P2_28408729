@@ -1,12 +1,113 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title><Programacion 2></title>
-  </head>
-  <body>
-    <h1><%= title %></h1>
-    <p>Isabela Valentina de Jesús Simancas Garcia></p>
-    <p>28.408.729></p>
-    <p>Sección: 1</p>
-  </body>
+<html lang="es">
+<head>
+	<title>Curriculum Vitae</title>
+	<link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="css/contacto.css">
+	<link href="https://fonts.googleapis.com/css2?family=Beau+Rivage&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/style.css">	
+</head>
+
+<body>
+
+	<div class="name">
+		<div class="img">
+			<img src="img/isa.jpg">
+		</div>
+		<div class="content">
+			<p class="p-1">Isabela Simancas</p>
+			<p class="p-2">20 años, Bachiller</p>
+		<div class="redes">
+			<p class="r1"><a href="https://www.facebook.com/Izzy1411/"><img src="img/facebook.png" width="45" height="40"></a></p>
+			<p class="r2"><a href="https://www.instagram.com/ivdjsg01/"><img src="img/instagram.png" width="49" height="40"></a></p>
+			<p class="r3"><a href="https://twitter.com/Alebasi1D"><img src="img/twitter.png" width="34" height="40"></a></p>
+
+			<header>
+				<nav>
+				 <ul>
+					 <a href="contactos">Contactos</a>
+				 </ul>
+				</nav> 
+			 </header>
+	</div>
+		</div>
+	</div>
+
+	<div class="info">
+		<p class="tituloSeccion">Información Personal &nbsp; &nbsp;<span class="icon icon-drivers-license"></span></p> 
+		<p class="tituloInfo">Nombres y Apellidos:</p>
+		<p class="infoInfo">Isabela Valentina de Jesús Simancas García</p><br><br>
+		<p class="tituloInfo">Cédula de Identidad:</p>
+		<p class="infoInfo">28.408.729</p><br><br>
+		<p class="tituloInfo">Fecha de Nacimiento:</p>
+		<p class="infoInfo">14/11/2001</p><br><br>
+		<p class="tituloInfo">Lugar de Nacimiento:</p>
+		<p class="infoInfo">San Juan de los Morros (Estado Guárico)</p><br><br>
+		<p class="tituloInfo">Dirección Completa:</p>
+		<p class="infoInfo">Urb. Rómulo Gallegos Sector 1, Vereda 1 Casa nº20</p><br><br>
+		<p class="tituloInfo">Teléfono:</p>
+		<p class="infoInfo">(0412) 5186254 - (0246) 4318583</p><br><br>
+		<p class="tituloInfo">Correo Electrónico:</p>
+		<p class="infoInfo">isabelasg2001@gmail.com</p>
+	</div>
+
+	<div class="info">
+		<p class="tituloSeccion">Formación académica &nbsp; &nbsp;<span class="icon-graduation-cap"></span></p>
+		<p class="tituloInfo">Primaria:</p>
+		<p class="infoInfo">U.E.C.A “Ángel de la Guarda”.</p><br><br>
+		<p class="tituloInfo">Secundaria:</p>
+		<p class="infoInfo">U.E.C.A “Ángel de la Guarda”.</p><br><br>
+		<p class="tituloInfo">Título obtenido:</p>
+		<p class="infoInfo">Bachiller Mención Administración y Procesamiento de datos.</p><br><br>
+		<p class="tituloInfo">Avanzada:</p>
+		<p class="infoInfo">Universidad Rómulo Gallegos “UNERG”.</p><br><br>
+		<p class="tituloInfo">Título a obtener:</p>
+		<p class="infoInfo">Ingeniería Informática. (Cursando).</p>
+	</div>
+
+	<div class="info">
+		<p class="tituloSeccion">Experiencia Laboral &nbsp; &nbsp;<span class="icon-briefcase"></span></p>
+		<p class="infoInfo">Auxiliar de iniciación musical Núcleo Orquestal Jesús María Torrealba.</p>
+		
+	</div>
+
+	<div class="info">
+		<p class="tituloSeccion">Lenguas &nbsp; &nbsp;<span class="icon-language"></span></p>
+		<p class="tituloInfo">Materna:</p>
+		<span>Español</span><br><br>
+		<p class="tituloInfo">Inglés:</p>
+		<p class="infoInfo">Nivel Básico</p>
+	</div>
+
+	<div class="info">
+		<p class="tituloSeccion">Habilidades y destrezas &nbsp; &nbsp;<span class="icon-mic"></span></p>
+		<span>•	Organizada</span>
+		<span>•	Puntual</span>
+		<span>•	Destreza y Habilidad en el desempeño de las actividades asignadas</span>
+		<span>•	Conocimiento Básico en Programación y Sistema</span>
+		<span>•	Pensamiento Creativo</span><br><br>
+		<span>•	Sentido de Responsabilidad</span>
+		<span>•	Conocimiento básico en aplicaciones Microsoft Office y Linux</span>
+		<span>•	Conocimiento básico en la catedra de guitarra</span>
+	</div>
+	<h2>Contacto</h2>
+	<form action="/comentario" method="post">
+		<ul>
+			<li>
+			  <label for="name">Nombre:</label>
+			  <input type="text" id="name" name="user_name">
+			</li>
+			<li>
+			  <label for="mail">Email:</label>
+			  <input type="email" id="mail" name="user_mail">
+			</li>
+			<li>
+			  <label for="msg">Comentario:</label>
+			  <textarea id="msg" name="user_message"></textarea>
+			</li>
+		   </ul>
+		   <button type="submit">Enviar</button>
+	</form>
+
+</body>
 </html>
