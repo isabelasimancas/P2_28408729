@@ -95,7 +95,29 @@ router.get ('/login' , (req,res) => {
     res.render("login")
   });
 
-
+  router.use (session({
+    secret: 'keyboard cat',
+    resave: false,
+    saveUninitialized: false,
+  }));
+  
+  router.get('/redirect/google', passport.authenticate('google', {
+    successRedirect: '/contactos',
+    failureRedirect: '/login'
+  }));
+  
+  passport.serializeUser(function(user, cb) {
+    process.nextTick(function() {
+      cb(null, { id: user.id, username: user.username, name: user.name });
+    });
+  });
+  
+  passport.deserializeUser(function(user, cb) {
+    process.nextTick(function() {
+      return cb(null, user);
+    });
+  });
+  
 const usuarioP = process.env.USUARIO;
 const passwordP = process.env.PASSWORD;
 console.log(usuarioP , passwordP)
@@ -142,25 +164,4 @@ passport.use(new GoogleStrategy(
   failureRedirect: '/login'
   }));
 
-  router.use (session({
-    secret: 'keyboard cat',
-    resave: false,
-    saveUninitialized: false,
-  }));
-
-  router.get('/redirect/google', passport.authenticate('google', {
-    successRedirect: '/contactos',
-    failureRedirect: '/login'
-  }));
-
-  passport.serializeUser(function(user, cb) {
-    process.nextTick(function() {
-      cb(null, { id: user.id, username: user.username, name: user.name });
-    });
-  });
   
-  passport.deserializeUser(function(user, cb) {
-    process.nextTick(function() {
-      return cb(null, user);
-    });
-  });
