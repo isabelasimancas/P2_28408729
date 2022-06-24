@@ -6,6 +6,7 @@
 	<link rel="stylesheet" href="css/contacto.css">
 	<link href="https://fonts.googleapis.com/css2?family=Beau+Rivage&display=swap" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/style.css">	
+	<script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
 
 <body>
@@ -25,7 +26,7 @@
 			<header>
 				<nav>
 				 <ul>
-					 <a href="contactos">Contactos</a>
+					 <a href="/login">Iniciar sesión</a>
 				 </ul>
 				</nav> 
 			 </header>
@@ -106,8 +107,10 @@
 			  <textarea id="msg" name="user_message"></textarea>
 			</li>
 		   </ul>
+			   <div class="g-recaptcha" data-sitekey="6LeWrCYgAAAAAANdUsZX6Y7hZKhUqGvZVa95siGk"></div>
 		   <button type="submit">Enviar</button>
 	</form>
+	
 
 </body>
 </html>
