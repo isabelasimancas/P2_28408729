@@ -123,7 +123,7 @@ passport.use(new GoogleStrategy(
   {
     clientID: process.env.GOOGLE_CLIENTE_ID,
     clientSecret: process.env.GOOGLE_SECRETO_CL,
-    callbackURL: "http://localhost:3000/redirect/google",
+    callbackURL: "https://formularioisa.herokuapp.com/google/callback",
   scope: [
   "https://www.googleapis.com/auth/userinfo.profile",
   "https://www.googleapis.com/auth/userinfo.email",
